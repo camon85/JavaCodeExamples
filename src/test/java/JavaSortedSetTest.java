@@ -5,8 +5,6 @@ import java.util.*;
 /**
  * Created by jooyong on 2016-01-14.
  */
-// http://www.tutorialspoint.com/java/java_sortedset_interface.htm
-// http://www.java2s.com/Tutorials/Java/Java_Collection/0110__Java_Sorted_Set.htm
 public class JavaSortedSetTest {
     @Test
     public void simple() {
