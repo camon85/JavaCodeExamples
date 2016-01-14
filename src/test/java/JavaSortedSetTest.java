@@ -66,29 +66,28 @@ public class JavaSortedSetTest {
     @Test
     public void comparetor() {
         // 나이 오름차순
-        SortedSet<Person> personsByAgeAsc = new TreeSet<>(Comparator.comparing(Person::getAge));
-        personsByAgeAsc.add(new Person(19, "A"));
-        personsByAgeAsc.add(new Person(22, "Z"));
-        personsByAgeAsc.add(new Person(7, "F"));
-        personsByAgeAsc.add(new Person(45, "D"));
-        System.out.println("personsByAgeAsc: " + personsByAgeAsc);
+        SortedSet<Person> orderByAgeAsc =
+                new TreeSet<>(Comparator.comparing(Person::getAge));
+        orderByAgeAsc.add(new Person(19, "A"));
+        orderByAgeAsc.add(new Person(22, "Z"));
+        orderByAgeAsc.add(new Person(7, "F"));
+        System.out.println("orderByAgeAsc: " + orderByAgeAsc);
 
         // 나이 내림차순
-        SortedSet<Person> personsByAgeDesc = new TreeSet<>(Comparator.comparing(Person::getAge).reversed());
-        personsByAgeDesc.add(new Person(19, "A"));
-        personsByAgeDesc.add(new Person(22, "Z"));
-        personsByAgeDesc.add(new Person(7, "F"));
-        personsByAgeDesc.add(new Person(45, "D"));
-        System.out.println("personsByAgeDesc: " + personsByAgeDesc);
+        SortedSet<Person> orderByAgeDesc =
+                new TreeSet<>(Comparator.comparing(Person::getAge).reversed());
+        orderByAgeDesc.add(new Person(19, "A"));
+        orderByAgeDesc.add(new Person(22, "Z"));
+        orderByAgeDesc.add(new Person(7, "F"));
+        System.out.println("orderByAgeDesc: " + orderByAgeDesc);
 
         // 이름 오름차순
-        SortedSet<Person> personsByName = new TreeSet<>(Comparator.comparing(Person::getName));
-        personsByName.add(new Person(19, "A"));
-        personsByName.add(new Person(22, "Z"));
-        personsByName.add(new Person(7, "F"));
-        personsByName.add(new Person(45, "D"));
-        System.out.println("personsByName: " + personsByName);
-
+        SortedSet<Person> orderByName =
+                new TreeSet<>(Comparator.comparing(Person::getName));
+        orderByName.add(new Person(19, "A"));
+        orderByName.add(new Person(22, "Z"));
+        orderByName.add(new Person(7, "F"));
+        System.out.println("orderByName: " + orderByName);
     }
 
     class Person {
