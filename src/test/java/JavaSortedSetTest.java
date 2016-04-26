@@ -1,3 +1,4 @@
+import com.camon.model.Person;
 import org.junit.Test;
 
 import java.util.*;
@@ -88,39 +89,5 @@ public class JavaSortedSetTest {
         orderByName.add(new Person(22, "Z"));
         orderByName.add(new Person(7, "F"));
         System.out.println("orderByName: " + orderByName);
-    }
-
-    class Person {
-        private int age;
-        private String name;
-
-        public Person(int age, String name) {
-            this.age = age;
-            this.name = name;
-        }
-
-        public int getAge() {
-            return age;
-        }
-
-        public void setAge(int age) {
-            this.age = age;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
-
-        @Override
-        public String toString() {
-            return "Person{" +
-                    "age=" + age +
-                    ", name='" + name + '\'' +
-                    '}';
-        }
     }
 }
