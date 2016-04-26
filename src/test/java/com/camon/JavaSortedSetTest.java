@@ -1,3 +1,5 @@
+package com.camon;
+
 import com.camon.model.Person;
 import org.junit.Test;
 
@@ -7,6 +9,7 @@ import java.util.*;
  * Created by jooyong on 2016-01-14.
  */
 public class JavaSortedSetTest {
+
     @Test
     public void simple() {
         SortedSet<String> fruitSet = new TreeSet<>();
