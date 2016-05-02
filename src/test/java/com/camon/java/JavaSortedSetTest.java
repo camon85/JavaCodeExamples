@@ -68,7 +68,7 @@ public class JavaSortedSetTest {
     }
 
     @Test
-    public void comparetor() {
+    public void comparator() {
         // 나이 오름차순
         SortedSet<Person> orderByAgeAsc =
                 new TreeSet<>(Comparator.comparing(Person::getAge));
