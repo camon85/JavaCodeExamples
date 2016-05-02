@@ -37,6 +37,7 @@ public class GuavaSplitterTest {
     public void removeEmptyString() {
         List<String> split = Splitter.on(',')
                 .omitEmptyStrings()
+                .trimResults()
                 .splitToList(FRUITS);
 
         for (String s : split) {
@@ -52,7 +53,7 @@ public class GuavaSplitterTest {
                 .split(input);
 
         for (String s : result.keySet()) {
-            System.out.println("key:" + s);
+            System.out.println("key: " + s);
             System.out.println("value: " + result.get(s));
         }
     }
