@@ -1,4 +1,4 @@
-package com.camon;
+package com.camon.guava;
 
 import com.camon.model.Person;
 import com.google.common.collect.Ordering;
@@ -13,21 +13,20 @@ import java.util.List;
 /**
  * Created by camon on 2016-04-26.
  */
-public class GuavaTest {
+public class GuavaOrderingTest {
 
     @Test
-    public void simple() {
+    public void sort() {
         List<Integer> numbers = Arrays.asList(3, 2, 1, 5, 6, 8, 15);
         Collections.sort(numbers, Ordering.natural());
         System.out.println(numbers);
-
 
         Collections.sort(numbers, Ordering.natural().reverse());
         System.out.println(numbers);
     }
 
     @Test
-    public void comparetor() {
+    public void sortByComparator() {
         List<Person> persons = new ArrayList<>();
         persons.add(new Person(19, "A"));
         persons.add(new Person(22, "Z"));

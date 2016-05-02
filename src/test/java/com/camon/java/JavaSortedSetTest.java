@@ -1,4 +1,4 @@
-package com.camon;
+package com.camon.java;
 
 import com.camon.model.Person;
 import org.junit.Test;
